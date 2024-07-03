@@ -12,13 +12,13 @@ arch:
   - i386
 init: false
 map:
-  - config
-  - addon_configs
+  - homeassistant_config
+  - addon_config
 options:
-  - media_folder: "camterraza"
-  - tf_labels: "con,sin"
-  - tf_label_invoke: "con"
-  - hassio_webhookurl: "replaceme with another webhook automation full URL"
+  media_folder: "camterraza"
+  tf_labels: "con,sin"
+  tf_label_invoke: "con"
+  hassio_webhookurl: "replaceme with another webhook automation full URL"
 schema:
   message: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"
