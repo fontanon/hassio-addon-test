@@ -5,11 +5,11 @@ slug: example
 description: Example add-on
 url: "https://github.com/fontanon/hassio-addon-test/tree/main/example"
 arch:
-  - armhf
-  - armv7
+  # - armhf
+  # - armv7
   - aarch64
-  - amd64
-  - i386
+  # - amd64
+  # - i386
 init: false
 map:
   - homeassistant_config
