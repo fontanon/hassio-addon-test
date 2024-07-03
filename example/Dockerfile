@@ -10,3 +10,12 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+
+# Added
+RUN apk add --no-cache -U python3 python3-dev gcc linux-headers musl-dev tcpdump \
+    && pip3 install --no-cache --upgrade pip
+
+WORKDIR /tmp
+COPY requirements.txt ./
+RUN pip install tflite-runtime
+RUN pip install -r requirements.txt
