@@ -21,4 +21,4 @@ options:
   hassio_webhookurl: "replaceme with another webhook automation full URL"
 schema:
   message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "arm64v8/python:3.9.12"
