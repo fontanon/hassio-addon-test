@@ -1,9 +1,9 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Example add-on
-version: "1.2.1"
+version: "1.2.2"
 slug: example
 description: Example add-on
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/fontanon/hassio-addon-test/tree/main/example"
 arch:
   - armhf
   - armv7
@@ -12,14 +12,6 @@ arch:
   - i386
 init: false
 map:
-  - share:rw
-options:
-  message: "Hello world..."
-schema:
-  message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
-  # Added
-map:
   - config
   - addon_configs
 options:
@@ -27,3 +19,6 @@ options:
   - tf_labels: "con,sin"
   - tf_label_invoke: "con"
   - hassio_webhookurl: "replaceme with another webhook automation full URL"
+schema:
+  message: "str?"
+image: "ghcr.io/home-assistant/{arch}-addon-example"
