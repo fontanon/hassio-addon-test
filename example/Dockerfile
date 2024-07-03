@@ -12,7 +12,7 @@ RUN \
 COPY rootfs /
 
 # Added
-RUN apk add --no-cache -U python3 python3-dev gcc linux-headers musl-dev tcpdump \
+RUN apk add --no-cache -U py-pip python3 python3-dev gcc linux-headers musl-dev tcpdump \
     && pip3 install --no-cache --upgrade pip
 
 WORKDIR /tmp
