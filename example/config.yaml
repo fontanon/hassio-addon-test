@@ -18,3 +18,12 @@ options:
 schema:
   message: "str?"
 image: "ghcr.io/home-assistant/{arch}-addon-example"
+# Added
+map:
+  - config
+  - addon_configs
+options:
+  - media_folder: "camterraza"
+  - tf_labels: "con,sin"
+  - tf_label_invoke: "con"
+  - hassio_webhookurl: "replaceme with another webhook automation full URL"
